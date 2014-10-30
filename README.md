@@ -1,6 +1,9 @@
-vagrant-cakebox
-===============
+vagrant-cakebox-builder
+=======================
 
-CakePHP multi-app development server.
+How the vagrant-cakebox is built:
 
-- Ubuntu 14.04
+- Chef provisioned
+- Berksfile cookbooks
+- Test-kitchen
+
