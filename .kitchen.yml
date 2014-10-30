@@ -1,0 +1,31 @@
+<%
+  # Run kitchen against same node.json as used by Vagrantfile
+  require 'json'
+  if !File.exist?('node.json')
+    puts 'Aborting .kitchen.yml: required node.json does not exist' unless File.exist?('node.json')
+    exit
+  else
+    node = JSON.parse(File.read('node.json'))
+    node['attributes']['hexo']['ip_address'] = node['vm']['ip_address']
+  end
+%>
+---
+driver:
+  name: vagrant
+  synced_folders:
+    - [ "./blogs/%{instance_name}", <%= node['attributes']['hexo']['blogs_root'] %>, 'create: true, owner: "vagrant", group: "vagrant"' ]
+  network:
+    - [ 'private_network', {ip: "<%= node['vm']['ip_address'] %>"} ]
+
+provisioner:
+  name: chef_solo
+  solo_rb:
+      ssl_verify_mode: verify_peer
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list: <%= node["run_list"] %>
+    attributes: <%= node["attributes"].to_json %>
