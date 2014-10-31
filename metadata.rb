@@ -1,4 +1,4 @@
-name              'vagrant-cakephp-box'
+name              'vagrant-cakebox-builder'
 maintainer        'ALT3 B.V.'
 license           'MIT'
 description       'Chef provisioned Vagrant Cakephp box'
