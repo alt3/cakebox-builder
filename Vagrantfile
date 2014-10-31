@@ -39,6 +39,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = settings['vm']['hostname']
   config.vm.network :private_network, ip: settings['vm']['ip_address']
 
+  # Asign more memory
+	config.vm.provider "virtualbox" do |vb|
+	  vb.customize ["modifyvm", :id, "--memory", "2048"]
+	end
+
   # Do not mount /vagrant. Mount local blogs directory to /blogs instead
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.synced_folder 'apps', '/apps', create: true, owner: 'vagrant', group: 'vagrant'
