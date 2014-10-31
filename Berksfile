@@ -3,7 +3,6 @@ source "https://supermarket.getchef.com"
 metadata
 
 cookbook 'apt'
-cookbook 'nginx'
 cookbook 'memcached'
 
 
@@ -20,6 +19,7 @@ end
 # Define cookbooks using standard Berksfile cookbook syntax
 depload 'percona',    git: 'https://github.com/phlipper/chef-percona.git'
 depload 'redis',      git: 'https://github.com/phlipper/chef-redis.git'
+depload 'nginx',      git: 'https://github.com/phlipper/chef-nginx.git'
 depload 'php5-fpm',   git: 'https://github.com/stajkowski/php5-fpm.git'
 depload "composer",   git: "git://github.com/Morphodo/chef-composer.git"
 depload 'git-ppa',    git: 'https://github.com/alt3-cookbooks/git-ppa.git'

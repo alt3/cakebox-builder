@@ -12,6 +12,9 @@
 				"collation": "utf8_unicode_ci"
 			}
 		},
+		"nginx": {
+			"repository": "ppa"
+		},
 		"php_fpm": {
 			"update_system": false,
 			"upgrade_system": false,
@@ -44,7 +47,7 @@
 		"recipe[percona::server]",
 		"recipe[percona::backup]",
 		"recipe[php5-fpm::install]",
-		"recipe[nginx]",
+		"recipe[nginx::server]",
 		"recipe[composer]",
 		"recipe[phpunit]",
 		"recipe[memcached]",
