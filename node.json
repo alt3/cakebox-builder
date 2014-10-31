@@ -36,11 +36,6 @@
 				"php5-json",
 				"php-pear"
 			]
-		},
-		"utilities": {
-			"login_chdir": {
-				"directory": "/apps"
-			}
 		}
 	},
 	"run_list": [
@@ -49,7 +44,6 @@
 		"recipe[percona::server]",
 		"recipe[percona::backup]",
 		"recipe[php5-fpm::install]",
-		"recipe[nginx]",
-		"recipe[utilities::login_chdir]"
+		"recipe[nginx]"
 	]
 }
