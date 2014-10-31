@@ -40,7 +40,7 @@
 	},
 	"run_list": [
 		"recipe[apt]",
-		"recipe[git]",
+		"recipe[git-ppa]",
 		"recipe[percona::server]",
 		"recipe[percona::backup]",
 		"recipe[php5-fpm::install]",
