@@ -46,6 +46,7 @@
 		"recipe[php5-fpm::install]",
 		"recipe[nginx]",
 		"recipe[composer]",
-		"recipe[phpunit]"
+		"recipe[phpunit]",
+		"recipe[memcached]"
 	]
 }

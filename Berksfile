@@ -4,6 +4,7 @@ metadata
 
 cookbook 'apt'
 cookbook 'nginx'
+cookbook 'memcached'
 
 
 ## Use local (development) cookbooks if present
