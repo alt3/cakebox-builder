@@ -1,7 +1,7 @@
-vagrant-cakebox-builder
-=======================
+cakebox-oven
+============
 
-How the vagrant-cakebox is built:
+Cakebox build source:
 
 - Chef provisioned
 - Berksfile cookbooks
