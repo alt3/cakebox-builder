@@ -45,6 +45,7 @@
 		"recipe[percona::backup]",
 		"recipe[php5-fpm::install]",
 		"recipe[nginx]",
-		"recipe[composer]"
+		"recipe[composer]",
+		"recipe[phpunit]"
 	]
 }
