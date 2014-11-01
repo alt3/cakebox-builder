@@ -46,6 +46,7 @@
 		"recipe[git-ppa]",
 		"recipe[percona::server]",
 		"recipe[percona::backup]",
+		"recipe[postgresql::server]",
 		"recipe[php5-fpm::install]",
 		"recipe[nginx::server]",
 		"recipe[composer]",
