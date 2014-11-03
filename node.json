@@ -50,6 +50,7 @@
 		"recipe[composer]",
 		"recipe[phpunit]",
 		"recipe[memcached]",
-		"recipe[redis]"
+		"recipe[redis]",
+		"recipe[heroku::toolbelt]"
 	]
 }
