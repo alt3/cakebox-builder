@@ -1,10 +1,13 @@
 cakebox-builder
 ===============
 
-Cakebox build source:
+The sources that build the base-box used by the Vagrant Cakebox.
 
-- Chef provisioned
-- Berksfile cookbooks
+Uses:
+
+- Vagrant
+- Chef-DK
+- Berksfile
 - Test-kitchen
 
 # Included software
@@ -19,22 +22,21 @@ Cakebox build source:
 - Composer
 - PHPUnit
 
-# TODO
+# PHP Modules
 
-- add Postgres cookbook
-- update PHP to 5.6
-- disable update-notifier-common login information
-- replace default nginx webpage (now broken due to incorrect default root /var/www)
-- use nxensite to create sites (remove deleted sites using nxdissite)
-- percona password databag
-- Add PHP CodeSniffer
-- Optimize nginx (attributes)
-- Optimize redis (attributes)
-- Optimize percona (attributes)
-- Add aliases
-- Add bash colouring scheme
-- Cleanup cookbook (remove ~/install.sh (used for chef))
+- php-cli
+- etc.
 
-# Counter
 
-- http://www.sitepoint.com/6-reasons-move-laravel-homestead/
+# TODO Server
+
+- percona password databag (also: define MySQL root password in YAML?)
+- remove update-notifier-common login information
+- give vagrant permission on /var/log/nginx
+- Add PHP CodeSniffer?
+- Optimize nginx configuration (attributes)
+- Optimize redis configuration (attributes)
+- Optimize percona configuration (attributes)
+- Extend php5-ppa cookbook with www.conf generation
+- https://coderwall.com/p/ztskha ??
+- custom login (ip-addresses, databases, websites)
