@@ -13,7 +13,8 @@
 			}
 		},
 		"nginx": {
-			"repository": "ppa"
+			"repository": "ppa",
+			"skip_default_site": true
 		},
 		"php5_ppa": {
 			"modules": [
@@ -51,6 +52,7 @@
 		"recipe[phpunit]",
 		"recipe[memcached]",
 		"recipe[redis]",
-		"recipe[heroku::toolbelt]"
+		"recipe[heroku::toolbelt]",
+		"recipe[cakebox]"
 	]
 }
