@@ -40,5 +40,4 @@ Uses:
 - Optimize percona configuration (attributes)
 - Extend php5-ppa cookbook with www.conf generation
 - https://coderwall.com/p/ztskha ??
-- custom login (ip-addresses, databases, websites)
 - Ruby now installed by the Heroku toolbelt ==> should it be kept in Cakebox core since it can be installed additionally?
