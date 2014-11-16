@@ -17,10 +17,11 @@ Uses:
 - Git (PPA)
 - Redis (PPA)
 - Nginx (PPA)
-- Percona mySQL
+- Percona MySQL
 - Memcached
 - Composer
 - PHPUnit
+- PHP CodeSniffer
 - Heroku Toolbelt
 - Ruby 1.9.3
 

@@ -26,4 +26,5 @@ depload 'php5-ppa',   git: 'https://github.com/alt3-cookbooks/php5-ppa.git'
 depload "composer",   git: "https://github.com/escapestudios-cookbooks/phpcs.git"
 depload 'phpunit',    git: 'https://github.com/alt3-cookbooks/phpunit'
 depload 'heroku',     git: 'https://github.com/alt3-cookbooks/heroku.git'
+depload 'phpcs',      git: 'https://github.com/escapestudios-cookbooks/phpcs.git'
 depload 'cakebox',    git: 'https://github.com/alt3-cookbooks/cakebox.git'

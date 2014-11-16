@@ -38,6 +38,14 @@
 				"php5-json",
 				"php-pear"
 			]
+		},
+		"phpcs": {
+			"install_method": "composer",
+			"coding_standards": {
+				"CakePHP": {
+					"repository": "https://github.com/cakephp/cakephp-codesniffer.git"
+				}
+			}
 		}
 	},
 	"run_list": [
@@ -53,6 +61,7 @@
 		"recipe[memcached]",
 		"recipe[redis]",
 		"recipe[heroku::toolbelt]",
+		"recipe[phpcs]",
 		"recipe[cakebox]"
 	]
 }
