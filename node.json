@@ -56,12 +56,12 @@
 		"recipe[postgresql::server]",
 		"recipe[php5-ppa]",
 		"recipe[nginx::server]",
-		"recipe[composer]",
-		"recipe[phpunit]",
 		"recipe[memcached]",
 		"recipe[redis]",
-		"recipe[heroku::toolbelt]",
+		"recipe[composer]",
+		"recipe[phpunit]",
 		"recipe[phpcs]",
+		"recipe[heroku::toolbelt]",
 		"recipe[cakebox]"
 	]
 }
