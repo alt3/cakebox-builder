@@ -5,8 +5,8 @@
 	},
 	"attributes": {
 		"percona": {
-			"skip_passwords": true,
 			"server": {
+				"root_password": "secret",
 				"bind_address": "0.0.0.0",
 				"character_set": "utf8",
 				"collation": "utf8_unicode_ci"
