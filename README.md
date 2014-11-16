@@ -21,6 +21,7 @@ Uses:
 - Memcached
 - Composer
 - PHPUnit
+- Heroku Toolbelt
 - Ruby 1.9.3
 
 # PHP Modules
@@ -31,13 +32,10 @@ Uses:
 
 # TODO
 
-- percona password databag (also: define MySQL root password in YAML?)
 - remove update-notifier-common login information
-- give vagrant permission on /var/log/nginx
-- Add PHP CodeSniffer?
+- vagrant read permission on /var/log/nginx, /var/log/mysql
+- Add PHP CodeSniffer !!!
 - Optimize nginx configuration (attributes)
 - Optimize redis configuration (attributes)
 - Optimize percona configuration (attributes)
-- Extend php5-ppa cookbook with www.conf generation
 - https://coderwall.com/p/ztskha ??
-- Ruby now installed by the Heroku toolbelt ==> should it be kept in Cakebox core since it can be installed additionally?
