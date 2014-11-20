@@ -25,5 +25,6 @@ depload 'postgresql', git: 'https://github.com/phlipper/chef-postgresql.git'
 depload 'php5-ppa',   git: 'https://github.com/alt3/chef-php5-ppa.git'
 depload "composer",   git: "https://github.com/Morphodo/chef-composer.git"
 depload 'phpunit',    git: 'https://github.com/alt3/chef-phpunit'
+depload 'phpcs',      git: 'https://github.com/alt3/chef-phpcs'
 depload 'heroku',     git: 'https://github.com/alt3/chef-heroku.git'
 depload 'cakebox',    git: 'https://github.com/alt3/chef-cakebox.git'

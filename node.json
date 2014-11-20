@@ -52,6 +52,7 @@
 		"recipe[redis]",
 		"recipe[composer]",
 		"recipe[phpunit]",
+		"recipe[phpcs]",
 		"recipe[heroku::toolbelt]",
 		"recipe[cakebox]"
 	]
