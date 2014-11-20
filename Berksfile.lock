@@ -2,7 +2,7 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: 31637355480431e9a6ce09304f91bfc4041d89fb
+    revision: 75d63f008b395b4a706bad0ba9c1749de0591c4a
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -21,10 +21,10 @@ DEPENDENCIES
     revision: 9217d3fd30f49637b17294af8cc2afa3ee44c026
   php5-ppa
     git: https://github.com/alt3/chef-php5-ppa.git
-    revision: d9c2249581d0e4f17d8c4cc7820ca39f49dd439e
+    revision: 1ec87dfe8843264d0664b3c60536a3b740280045
   phpcs
     git: https://github.com/alt3/chef-phpcs
-    revision: 644e3abde00276a7b03d7be67d0c9ddeaaa40330
+    revision: 64157206d847b79bd86f2a75fbcc100758828142
   phpunit
     git: https://github.com/alt3/chef-phpunit
     revision: 729bccf81d3fae968db68e733631df7cf09e0726
@@ -52,26 +52,14 @@ GRAPH
   chef-sugar (2.4.1)
   chef_handler (1.1.6)
   composer (0.2.1)
-  dmg (2.2.2)
-  git (4.0.2)
-    build-essential (>= 0.0.0)
-    dmg (>= 0.0.0)
-    runit (>= 1.0.0)
-    windows (>= 0.0.0)
-    yum (~> 3.0)
-    yum-epel (>= 0.0.0)
   git-ppa (1.0.0)
     apt (>= 0.0.0)
   heroku (1.0.0)
     ark (>= 0.0.0)
-  iis (2.1.6)
-    windows (>= 1.34.6)
   memcached (1.7.2)
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  mysql (5.6.1)
-    yum-mysql-community (>= 0.0.0)
   nginx (0.5.5)
     apt (>= 0.0.0)
   openssl (2.0.0)
@@ -81,13 +69,6 @@ GRAPH
     build-essential (>= 0.0.0)
     openssl (>= 0.0.0)
     yum (~> 3.0)
-    yum-epel (>= 0.0.0)
-  php (1.5.0)
-    build-essential (>= 0.0.0)
-    iis (>= 0.0.0)
-    mysql (>= 0.0.0)
-    windows (>= 0.0.0)
-    xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
   php5-ppa (1.0.0)
     apt (>= 0.0.0)
@@ -106,11 +87,6 @@ GRAPH
   vagrant-cakebox-builder (0.0.2)
   windows (1.34.8)
     chef_handler (>= 0.0.0)
-  xml (1.2.6)
-    build-essential (>= 0.0.0)
-    chef-sugar (>= 0.0.0)
   yum (3.4.1)
   yum-epel (0.5.2)
     yum (~> 3.0)
-  yum-mysql-community (0.1.10)
-    yum (>= 3.0)
