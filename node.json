@@ -4,18 +4,18 @@
 		"hostname":	"cakebox"
 	},
 	"attributes": {
-		"cakebox": {
-			"databases": {
-				"remote_username": "vagrant",
-				"remote_password": "vagrant"
-			}
-		},
 		"percona": {
 			"server": {
 				"root_password": "secret",
 				"bind_address": "0.0.0.0",
 				"character_set": "utf8",
 				"collation": "utf8_unicode_ci"
+			}
+		},
+		"cakebox": {
+			"databases": {
+				"remote_username": "vagrant",
+				"remote_password": "vagrant"
 			}
 		},
 		"nginx": {
