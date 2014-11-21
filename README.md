@@ -1,9 +1,13 @@
-cakebox-builder
+Cakebox Builder
 ===============
 
-The sources that build the base-box used by the Vagrant Cakebox.
+The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagrant base box.
 
-Uses:
+# Purpose
+
+
+
+#Requires:
 
 - Vagrant
 - Chef-DK
@@ -12,13 +16,14 @@ Uses:
 
 # Included software
 
-- Ubuntu 14.04
-- PHP 5.6
-- Git (PPA)
+- Ubuntu 14.04 TLS
+- PHP 5.6 (PPA)
+- Git 2.x (PPA)
+- Memcached
 - Redis (PPA)
 - Nginx (PPA)
 - Percona MySQL
-- Memcached
+- PostgreSQL
 - Composer
 - PHPUnit
 - PHP CodeSniffer
@@ -27,16 +32,16 @@ Uses:
 
 # PHP Modules
 
-- php-cli
-- etc.
+See node.json for a full list of all installed PHP modules.
 
+# Contributing
 
-# TODO
+Adding features to the base box should be kept to a minimum. Make sure to create
+an issue before creating a pull request.
 
-- remove update-notifier-common login information
-- vagrant read permission on /var/log/nginx, /var/log/mysql
-- Add PHP CodeSniffer !!!
-- Optimize nginx configuration (attributes)
-- Optimize redis configuration (attributes)
-- Optimize percona configuration (attributes)
-- https://coderwall.com/p/ztskha ??
+1. Fork it ( https://github.com/alt3/cakebox-builder/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Make sure test-kitchen and foodcritic tests pass
+4. Commit your changes (`git commit -am 'Adds some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
