@@ -4,6 +4,12 @@
 		"hostname":	"cakebox"
 	},
 	"attributes": {
+		"cakebox": {
+			"databases": {
+				"remote_username": "vagrant",
+				"remote_password": "vagrant"
+			}
+		},
 		"percona": {
 			"server": {
 				"root_password": "secret",
