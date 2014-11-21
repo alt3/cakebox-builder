@@ -2,16 +2,16 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: 75d63f008b395b4a706bad0ba9c1749de0591c4a
+    revision: c76f2eb61b0f79d1b7c83b1aa1c1cf1bc7683110
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
   git-ppa
     git: https://github.com/alt3/chef-git-ppa.git
-    revision: 4e4c8520e0094a23a5d5b76779ca433078938ea7
+    revision: 9595bf8ab1d66a7b08d4caae0e788b48b6025b31
   heroku
     git: https://github.com/alt3/chef-heroku.git
-    revision: 435195328fc2da360aa9abd1e3c2d0ab6f65fe07
+    revision: 4e00cb5ae5fee5d4789acdfe147424b805df641f
   memcached
   nginx
     git: https://github.com/phlipper/chef-nginx.git
@@ -21,13 +21,13 @@ DEPENDENCIES
     revision: 9217d3fd30f49637b17294af8cc2afa3ee44c026
   php5-ppa
     git: https://github.com/alt3/chef-php5-ppa.git
-    revision: 1ec87dfe8843264d0664b3c60536a3b740280045
+    revision: 3752532f84d24f64796b56f9b2ffac0fbe429931
   phpcs
     git: https://github.com/alt3/chef-phpcs
     revision: 64157206d847b79bd86f2a75fbcc100758828142
   phpunit
     git: https://github.com/alt3/chef-phpunit
-    revision: 729bccf81d3fae968db68e733631df7cf09e0726
+    revision: b40f0721b40dc79783f1263f8386de7ba767de57
   postgresql
     git: https://github.com/phlipper/chef-postgresql.git
     revision: c3d9ab503c63eb4af222aa45cea4243b9879ff5b
