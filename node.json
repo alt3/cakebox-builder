@@ -57,8 +57,8 @@
 		"recipe[memcached]",
 		"recipe[redis]",
 		"recipe[composer]",
-		"recipe[phpunit]",
 		"recipe[phpcs]",
+		"recipe[phpunit]",
 		"recipe[heroku::toolbelt]",
 		"recipe[cakebox]"
 	]
