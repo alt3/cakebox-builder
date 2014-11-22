@@ -5,8 +5,15 @@ metadata
 cookbook 'apt'
 cookbook 'memcached'
 
-
-## Use local (development) cookbooks if present
+# Convenience function to use local (development) cookbooks instead of remote
+# repositories if they are found in ./cookbooks.
+#
+# Important:
+# - local cookbook folder names MUST be identical to the cookbook name
+#   found in the metadata.rb files or they will NOT be used. As an example:
+#   /cookbooks/chef-percona will not be used whereas ./cookbooks/percona will
+# - make sure to remove Berksfile.lock or the known remotes will be used
+#
 def depload(dep, options)
 	cookbooks = '.cookbooks'
 	if Dir.exists?("#{cookbooks}/#{dep}")
