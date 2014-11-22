@@ -2,7 +2,7 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: c76f2eb61b0f79d1b7c83b1aa1c1cf1bc7683110
+    revision: 7948f81cdf43bc0baade3493dce64b4253e98dac
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -24,10 +24,10 @@ DEPENDENCIES
     revision: 3752532f84d24f64796b56f9b2ffac0fbe429931
   phpcs
     git: https://github.com/alt3/chef-phpcs
-    revision: 64157206d847b79bd86f2a75fbcc100758828142
+    revision: b59aa8adeba392aadfd9a424b4b23c7a65082cc5
   phpunit
     git: https://github.com/alt3/chef-phpunit
-    revision: b40f0721b40dc79783f1263f8386de7ba767de57
+    revision: 17ca763d2a21e77f570394276b8dc55d3110c719
   postgresql
     git: https://github.com/phlipper/chef-postgresql.git
     revision: c3d9ab503c63eb4af222aa45cea4243b9879ff5b
