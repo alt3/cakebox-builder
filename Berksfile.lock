@@ -2,7 +2,7 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: 7948f81cdf43bc0baade3493dce64b4253e98dac
+    revision: c64428db1bca924dfd4eb46b699d657b6c0f16c5
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -33,7 +33,7 @@ DEPENDENCIES
     revision: c3d9ab503c63eb4af222aa45cea4243b9879ff5b
   redis
     git: https://github.com/phlipper/chef-redis.git
-    revision: 9803b2480f39989b5f88e1bf71e5c41d57c82d6b
+    revision: 7476279fc9c8727f082b8d77b5e1922dc2ef437b
   vagrant-cakebox-builder
     path: .
     metadata: true
@@ -47,7 +47,12 @@ GRAPH
     windows (>= 0.0.0)
   build-essential (2.1.3)
   cakebox (1.0.0)
+    apt (>= 0.0.0)
+    composer (>= 0.0.0)
+    git-ppa (>= 0.0.0)
     nginx (>= 0.0.0)
+    percona (>= 0.0.0)
+    php5-ppa (>= 0.0.0)
     phpcs (>= 0.0.0)
   chef-sugar (2.4.1)
   chef_handler (1.1.6)
@@ -78,7 +83,7 @@ GRAPH
     composer (>= 0.0.0)
   postgresql (0.15.0)
     apt (>= 1.9.0)
-  redis (0.5.5)
+  redis (0.5.6)
     apt (>= 0.0.0)
   runit (1.5.10)
     build-essential (>= 0.0.0)
