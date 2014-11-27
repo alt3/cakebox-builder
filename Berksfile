@@ -30,6 +30,7 @@ depload 'percona',    git: 'https://github.com/phlipper/chef-percona.git'
 depload 'redis',      git: 'https://github.com/phlipper/chef-redis.git'
 depload 'postgresql', git: 'https://github.com/phlipper/chef-postgresql.git'
 depload 'php5-ppa',   git: 'https://github.com/alt3/chef-php5-ppa.git'
+depload "curl",       git: "https://github.com/phlipper/chef-curl"
 depload "composer",   git: "https://github.com/Morphodo/chef-composer.git"
 depload 'phpunit',    git: 'https://github.com/alt3/chef-phpunit'
 depload 'phpcs',      git: 'https://github.com/alt3/chef-phpcs'

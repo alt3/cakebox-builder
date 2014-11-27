@@ -24,6 +24,7 @@ The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagran
 - Nginx (PPA)
 - Percona MySQL
 - PostgreSQL
+- Curl
 - Composer
 - PHPUnit
 - PHP CodeSniffer
@@ -45,3 +46,9 @@ an issue before creating a pull request.
 4. Commit your changes (`git commit -am 'Adds some feature'`)
 5. Push to the branch (`git push origin my-new-feature`)
 6. Create a new Pull Request
+
+# Test-kitchen
+
+	cd cakebox-builder
+	kitchen create
+	kitchen verify

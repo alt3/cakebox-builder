@@ -6,6 +6,9 @@ DEPENDENCIES
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
+  curl
+    git: https://github.com/phlipper/chef-curl
+    revision: d1f6690319eb4e5278af0060eb053937541d8d90
   git-ppa
     git: https://github.com/alt3/chef-git-ppa.git
     revision: 9595bf8ab1d66a7b08d4caae0e788b48b6025b31
@@ -18,7 +21,7 @@ DEPENDENCIES
     revision: 3aefd5f582501fda991785a4eb6c81314497556a
   percona
     git: https://github.com/phlipper/chef-percona.git
-    revision: 9217d3fd30f49637b17294af8cc2afa3ee44c026
+    revision: 96ffa468ce5787e6de8782dbc24c7c658d474acb
   php5-ppa
     git: https://github.com/alt3/chef-php5-ppa.git
     revision: 3752532f84d24f64796b56f9b2ffac0fbe429931
@@ -57,6 +60,7 @@ GRAPH
   chef-sugar (2.4.1)
   chef_handler (1.1.6)
   composer (0.2.1)
+  curl (1.0.0)
   git-ppa (1.0.0)
     apt (>= 0.0.0)
   heroku (1.0.0)
@@ -92,6 +96,6 @@ GRAPH
   vagrant-cakebox-builder (0.0.2)
   windows (1.34.8)
     chef_handler (>= 0.0.0)
-  yum (3.4.1)
-  yum-epel (0.5.2)
+  yum (3.5.1)
+  yum-epel (0.5.3)
     yum (~> 3.0)
