@@ -36,6 +36,12 @@ See node.json for a full list of all installed PHP modules.
 
 See Berksfile for a full list of all used cookbooks.
 
+# Test-kitchen
+
+	cd cakebox-builder
+	kitchen create
+	kitchen verify
+
 # Contributing
 
 1. Fork it ( https://github.com/alt3/cakebox-builder/fork )
@@ -44,9 +50,3 @@ See Berksfile for a full list of all used cookbooks.
 4. Commit your changes (`git commit -am 'Adds some feature'`)
 5. Push to the branch (`git push origin my-new-feature`)
 6. Create a new Pull Request
-
-# Test-kitchen
-
-	cd cakebox-builder
-	kitchen create
-	kitchen verify
