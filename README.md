@@ -3,18 +3,14 @@ Cakebox Builder
 
 The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagrant base box.
 
-# Purpose
-
-
-
-#Requires:
+# Requires:
 
 - Vagrant
 - Chef-DK
 - Berksfile
 - Test-kitchen
 
-# Included software
+# Provisions:
 
 - Ubuntu 14.04 TLS
 - PHP 5.6 (PPA)
@@ -30,15 +26,17 @@ The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagran
 - PHP CodeSniffer
 - Heroku Toolbelt
 - Ruby 1.9.3
+- Cakebox customizations
 
 # PHP Modules
 
 See node.json for a full list of all installed PHP modules.
 
-# Contributing
+# Chef cookbooks
 
-Adding features to the base box should be kept to a minimum. Make sure to create
-an issue before creating a pull request.
+See Berksfile for a full list of all used cookbooks.
+
+# Contributing
 
 1. Fork it ( https://github.com/alt3/cakebox-builder/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
