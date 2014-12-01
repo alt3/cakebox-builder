@@ -9,6 +9,8 @@
 !.kitchen.yml
 !.travis.yml
 !Berksfile
+!Berksfile.lock
+!build-basebox.sh
 !LICENSE.TXT
 !metadata.rb
 !node.json
