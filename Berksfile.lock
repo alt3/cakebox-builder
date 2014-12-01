@@ -2,7 +2,7 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: c64428db1bca924dfd4eb46b699d657b6c0f16c5
+    revision: d7fbd0d8c6b2b28a99b14366475ea8ff1e7d4d04
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
