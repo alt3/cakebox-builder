@@ -55,7 +55,7 @@
 		"recipe[php5-ppa]",
 		"recipe[nginx::server]",
 		"recipe[memcached]",
-		"recipe[redis]",
+		"recipe[redis::server]",
 		"recipe[curl]",
 		"recipe[composer]",
 		"recipe[phpcs]",
