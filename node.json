@@ -5,6 +5,7 @@
 	},
 	"attributes": {
 		"percona": {
+			"apt_keyserver": "hkp://pool.sks-keyservers.net:80",
 			"server": {
 				"root_password": "secret",
 				"bind_address": "0.0.0.0",
@@ -31,6 +32,7 @@
 				"php5-mcrypt",
 				"php5-intl",
 				"php5-mysql",
+				"php5-sqlite",
 				"php5-imap",
 				"php5-xdebug",
 				"php5-gd",
