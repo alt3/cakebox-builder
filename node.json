@@ -4,6 +4,10 @@
 		"hostname":	"cakebox"
 	},
 	"attributes": {
+		"nginx": {
+			"repository": "ppa",
+			"skip_default_site": true
+		},
 		"percona": {
 			"keyserver": "pool.sks-keyservers.net",
 			"server": {
@@ -12,16 +16,6 @@
 				"character_set": "utf8",
 				"collation": "utf8_unicode_ci"
 			}
-		},
-		"cakebox": {
-			"databases": {
-				"remote_username": "vagrant",
-				"remote_password": "vagrant"
-			}
-		},
-		"nginx": {
-			"repository": "ppa",
-			"skip_default_site": true
 		},
 		"php5_ppa": {
 			"modules": [
@@ -46,6 +40,15 @@
 				"php5-json",
 				"php-pear"
 			]
+		},
+		"java": {
+			"jdk_version": "7"
+		},
+		"cakebox": {
+			"databases": {
+				"remote_username": "vagrant",
+				"remote_password": "vagrant"
+			}
 		}
 	},
 	"run_list": [
@@ -63,6 +66,7 @@
 		"recipe[phpcs]",
 		"recipe[phpunit]",
 		"recipe[heroku::toolbelt]",
+		"recipe[java]",
 		"recipe[cakebox]"
 	]
 }

@@ -2,32 +2,37 @@ DEPENDENCIES
   apt
   cakebox
     git: https://github.com/alt3/chef-cakebox.git
-    revision: 86b6d55ee23cc71ed9f62bcbf3726d8c3b833f1a
+    revision: f3380604304ab90c4c129f7371d97f575a29c18b
   composer
-    git: https://github.com/bravo-kernel/chef-composer.git
-    revision: 00e4a6ba9bcd2e28be0a3011302d26bcd5a36d2b
+    git: https://github.com/Morphodo/chef-composer.git
+    revision: 92aee6313fc47dfd51b45c176b7efe41c767c57d
   curl
     git: https://github.com/phlipper/chef-curl
     revision: d1f6690319eb4e5278af0060eb053937541d8d90
+  elasticsearch
+    git: https://github.com/elasticsearch/cookbook-elasticsearch.git
+    revision: ed0a9d0e16371663177b4079acc645abc4ebb1a0
   git-ppa
     git: https://github.com/alt3/chef-git-ppa.git
     revision: 9595bf8ab1d66a7b08d4caae0e788b48b6025b31
   heroku
     git: https://github.com/alt3/chef-heroku.git
     revision: 4e00cb5ae5fee5d4789acdfe147424b805df641f
+  java
+    git: https://github.com/agileorbit-cookbooks/java.git
+    revision: 956e791bc70713643b4812b2fa681c26272e9acc
   memcached
   nginx
     git: https://github.com/phlipper/chef-nginx.git
     revision: 3aefd5f582501fda991785a4eb6c81314497556a
   percona
-    git: https://github.com/phlipper/chef-percona.git
-    revision: 96ffa468ce5787e6de8782dbc24c7c658d474acb
+    path: .cookbooks/percona
   php5-ppa
     git: https://github.com/alt3/chef-php5-ppa.git
     revision: 3752532f84d24f64796b56f9b2ffac0fbe429931
   phpcs
     git: https://github.com/alt3/chef-phpcs
-    revision: 77b0ef8e4f8b6f457bb955b8340840d762964098
+    revision: e4c434293047e2e1dc22b8dd7ee3a220b89ba6a7
   phpunit
     git: https://github.com/alt3/chef-phpunit
     revision: f3e9fe07523f3a09fde5d48d38efe6d3461edee7
@@ -61,14 +66,22 @@ GRAPH
   chef_handler (1.1.6)
   composer (0.2.1)
   curl (1.0.0)
+  elasticsearch (0.3.11)
+    ark (>= 0.2.4)
+    build-essential (>= 0.0.0)
+    java (>= 0.0.0)
+    monit (>= 0.0.0)
+    xml (>= 0.0.0)
   git-ppa (1.0.0)
     apt (>= 0.0.0)
   heroku (1.0.0)
     ark (>= 0.0.0)
+  java (1.29.0)
   memcached (1.7.2)
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  monit (0.7.5)
   nginx (0.5.5)
     apt (>= 0.0.0)
   openssl (2.0.0)
@@ -89,13 +102,16 @@ GRAPH
     apt (>= 1.9.0)
   redis (0.5.6)
     apt (>= 0.0.0)
-  runit (1.5.10)
+  runit (1.5.12)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   vagrant-cakebox-builder (0.0.2)
-  windows (1.34.8)
+  windows (1.36.1)
     chef_handler (>= 0.0.0)
+  xml (1.2.9)
+    build-essential (>= 0.0.0)
+    chef-sugar (>= 0.0.0)
   yum (3.5.1)
   yum-epel (0.5.3)
     yum (~> 3.0)

@@ -24,15 +24,16 @@ def load_cookbook(dep, options)
 end
 
 # Define cookbooks using standard Berksfile cookbook syntax
-load_cookbook 'git-ppa',    git: 'https://github.com/alt3/chef-git-ppa.git'
-load_cookbook 'nginx',      git: 'https://github.com/phlipper/chef-nginx.git'
-load_cookbook 'percona',    git: 'https://github.com/phlipper/chef-percona.git'
-load_cookbook 'redis',      git: 'https://github.com/phlipper/chef-redis.git'
-load_cookbook 'postgresql', git: 'https://github.com/phlipper/chef-postgresql.git'
-load_cookbook 'php5-ppa',   git: 'https://github.com/alt3/chef-php5-ppa.git'
-load_cookbook "curl",       git: "https://github.com/phlipper/chef-curl"
-load_cookbook "composer",   git: "https://github.com/Morphodo/chef-composer.git"
-load_cookbook 'phpunit',    git: 'https://github.com/alt3/chef-phpunit'
-load_cookbook 'phpcs',      git: 'https://github.com/alt3/chef-phpcs'
-load_cookbook 'heroku',     git: 'https://github.com/alt3/chef-heroku.git'
-load_cookbook 'cakebox',    git: 'https://github.com/alt3/chef-cakebox.git'
+load_cookbook 'git-ppa',       git: 'https://github.com/alt3/chef-git-ppa.git'
+load_cookbook 'nginx',         git: 'https://github.com/phlipper/chef-nginx.git'
+load_cookbook 'percona',       git: 'https://github.com/phlipper/chef-percona.git'
+load_cookbook 'redis',         git: 'https://github.com/phlipper/chef-redis.git'
+load_cookbook 'postgresql',    git: 'https://github.com/phlipper/chef-postgresql.git'
+load_cookbook 'php5-ppa',      git: 'https://github.com/alt3/chef-php5-ppa.git'
+load_cookbook "curl",          git: "https://github.com/phlipper/chef-curl"
+load_cookbook "composer",      git: "https://github.com/Morphodo/chef-composer.git"
+load_cookbook 'phpunit',       git: 'https://github.com/alt3/chef-phpunit'
+load_cookbook 'phpcs',         git: 'https://github.com/alt3/chef-phpcs'
+load_cookbook 'heroku',        git: 'https://github.com/alt3/chef-heroku.git'
+load_cookbook 'java',          git: 'https://github.com/agileorbit-cookbooks/java.git'
+load_cookbook 'cakebox',       git: 'https://github.com/alt3/chef-cakebox.git'
