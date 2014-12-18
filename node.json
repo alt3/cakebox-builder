@@ -5,7 +5,7 @@
 	},
 	"attributes": {
 		"percona": {
-			"apt_keyserver": "hkp://pool.sks-keyservers.net:80",
+			"keyserver": "pool.sks-keyservers.net",
 			"server": {
 				"root_password": "secret",
 				"bind_address": "0.0.0.0",
