@@ -67,6 +67,7 @@
 		"recipe[phpunit]",
 		"recipe[heroku::toolbelt]",
 		"recipe[java]",
+		"recipe[elasticsearch]",
 		"recipe[cakebox]"
 	]
 }

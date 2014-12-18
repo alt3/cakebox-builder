@@ -13,19 +13,23 @@ The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagran
 # Provisions:
 
 - Ubuntu 14.04 TLS
-- PHP 5.6 (PPA)
 - Git 2.x (PPA)
-- Memcached
-- Redis (PPA)
 - Nginx (PPA)
+- PHP 5.6 (PPA)
 - Percona MySQL
 - PostgreSQL
+- Elasticsearch
+- Memcached
+- Redis (PPA)
+- Elasticsearch
 - Curl
 - Composer
+- Java (OpenJDK)
 - PHPUnit
 - PHP CodeSniffer
 - Heroku Toolbelt
-- Ruby 1.9.3
+- Python
+- Ruby
 - Cakebox customizations
 
 # PHP Modules
