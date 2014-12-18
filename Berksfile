@@ -31,8 +31,7 @@ load_cookbook 'redis',      git: 'https://github.com/phlipper/chef-redis.git'
 load_cookbook 'postgresql', git: 'https://github.com/phlipper/chef-postgresql.git'
 load_cookbook 'php5-ppa',   git: 'https://github.com/alt3/chef-php5-ppa.git'
 load_cookbook "curl",       git: "https://github.com/phlipper/chef-curl"
-#depload "composer",   git: "https://github.com/Morphodo/chef-composer.git"
-load_cookbook "composer",   git: "https://github.com/bravo-kernel/chef-composer.git"
+load_cookbook "composer",   git: "https://github.com/Morphodo/chef-composer.git"
 load_cookbook 'phpunit',    git: 'https://github.com/alt3/chef-phpunit'
 load_cookbook 'phpcs',      git: 'https://github.com/alt3/chef-phpcs'
 load_cookbook 'heroku',     git: 'https://github.com/alt3/chef-heroku.git'
