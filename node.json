@@ -9,7 +9,7 @@
 			"skip_default_site": true
 		},
 		"percona": {
-			"keyserver": "pool.sks-keyservers.net",
+			"apt_keyserver": "pool.sks-keyservers.net",
 			"server": {
 				"root_password": "secret",
 				"bind_address": "0.0.0.0",
@@ -46,7 +46,7 @@
 		},
 		"elkstack": {
 			"config": {
-				"lumberjack_data_bag": "elkstack_lumberjack"
+				"lumberjack_data_bag": "lumberjack"
 			}
 		},
 		"cakebox": {
