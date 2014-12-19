@@ -53,6 +53,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.custom_config_path = '.chefconfig'
     chef.run_list = settings['run_list']
     chef.json = settings['attributes']
+    chef.data_bags_path = './data_bags'
   end
 
   # Make the vm work using VMWare Workstation too
