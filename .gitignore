@@ -2,7 +2,7 @@
 *
 
 # except these directories
-!databags/**
+!data_bags/**
 
 # except these files
 !.chefconfig
