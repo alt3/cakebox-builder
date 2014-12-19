@@ -44,6 +44,11 @@
 		"java": {
 			"jdk_version": "7"
 		},
+		"elkstack": {
+			"config": {
+				"lumberjack_data_bag": "elkstack_lumberjack"
+			}
+		},
 		"cakebox": {
 			"databases": {
 				"remote_username": "vagrant",
@@ -67,7 +72,7 @@
 		"recipe[phpunit]",
 		"recipe[heroku::toolbelt]",
 		"recipe[java]",
-		"recipe[elasticsearch]",
+		"recipe[elkstack::single]",
 		"recipe[cakebox]"
 	]
 }

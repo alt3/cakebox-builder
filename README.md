@@ -18,10 +18,11 @@ The sources used to build the [Cakebox]("http://github.com/alt3/cakebox") Vagran
 - PHP 5.6 (PPA)
 - Percona MySQL
 - PostgreSQL
-- Elasticsearch
 - Memcached
 - Redis (PPA)
 - Elasticsearch
+- Logstash
+* Kibana
 - Curl
 - Composer
 - Java (OpenJDK)
