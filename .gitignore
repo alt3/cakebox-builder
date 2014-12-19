@@ -1,6 +1,9 @@
 # ignore everything
 *
 
+# except these directories
+!databags/**
+
 # except these files
 !.chefconfig
 !.editorconfig
