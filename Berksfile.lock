@@ -1,8 +1,7 @@
 DEPENDENCIES
   apt
   cakebox
-    git: https://github.com/alt3/chef-cakebox
-    revision: 1900023b9d8f70d603ffdaef7895443bb668a29c
+    path: .cookbooks/cakebox
   composer
     git: https://github.com/Morphodo/chef-composer
     revision: 92aee6313fc47dfd51b45c176b7efe41c767c57d
@@ -10,11 +9,6 @@ DEPENDENCIES
     git: https://github.com/phlipper/chef-curl
     revision: d1f6690319eb4e5278af0060eb053937541d8d90
   elasticsearch
-    git: https://github.com/racker/cookbook-elasticsearch
-    revision: fddc01b3afe778589b6363512e97d2bfebf953fb
-  elkstack
-    git: https://github.com/rackspace-cookbooks/elkstack
-    revision: f990848af73adf699659d14ac058d8e501e6b379
   git-ppa
     git: https://github.com/alt3/chef-git-ppa
     revision: 9595bf8ab1d66a7b08d4caae0e788b48b6025b31
@@ -24,19 +18,16 @@ DEPENDENCIES
   java
     git: https://github.com/agileorbit-cookbooks/java
     revision: 956e791bc70713643b4812b2fa681c26272e9acc
-  kibana
+  kibana_lwrp
     git: https://github.com/lusis/chef-kibana
-    revision: 3528bb6d1ef26a24634a3221a9d3f2bbd5a8c812
+    revision: a84b00e81fda3fc496889513eafded1f56388a45
   logstash
-    git: https://github.com/racker/chef-logstash
-    revision: 3d7632612da325459242ea17ba02a2368a4e63a1
+    git: https://github.com/lusis/chef-logstash
+    revision: 003fcca1d0737c57bf980d2158f1f59df6fb1cbf
   memcached
   nginx
     git: https://github.com/phlipper/chef-nginx
     revision: 3aefd5f582501fda991785a4eb6c81314497556a
-  openssl
-    git: https://github.com/racker/openssl
-    revision: 942b12d2836fe20fbbf0b82afd1449aebe31b93a
   percona
     git: https://github.com/phlipper/chef-percona
     revision: 813567cac0d074d19c2a84fb9d422adf79ba38b1
@@ -55,6 +46,7 @@ DEPENDENCIES
   redis
     git: https://github.com/phlipper/chef-redis
     revision: 7476279fc9c8727f082b8d77b5e1922dc2ef437b
+  runit
   vagrant-cakebox-builder
     path: .
     metadata: true
@@ -72,8 +64,9 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  auto-patch (0.1.9)
-    cron (>= 0.0.0)
+  beaver (1.4.0)
+    apt (>= 0.0.0)
+    python (>= 0.0.0)
   build-essential (2.1.3)
   cakebox (1.0.0)
     apt (>= 0.0.0)
@@ -84,20 +77,9 @@ GRAPH
     php5-ppa (>= 0.0.0)
     phpcs (>= 0.0.0)
     ssh_known_hosts (>= 0.0.0)
-  chef-client (4.0.0)
-    cron (>= 1.2.0)
-    logrotate (>= 1.2.0)
-    windows (~> 1.11)
   chef-sugar (2.4.1)
   chef_handler (1.1.6)
-  client-rekey (0.1.0)
   composer (0.2.1)
-  consul (0.6.0)
-    ark (>= 0.0.0)
-    golang (~> 1.3.0)
-    runit (>= 0.0.0)
-    yum-repoforge (>= 0.0.0)
-  cron (1.4.3)
   curl (1.0.0)
   dmg (2.2.2)
   elasticsearch (0.3.10)
@@ -106,56 +88,40 @@ GRAPH
     java (>= 0.0.0)
     monit (>= 0.0.0)
     xml (>= 0.0.0)
-  elkstack (3.2.6)
-    apt (>= 0.0.0)
-    build-essential (>= 0.0.0)
-    chef-sugar (>= 0.0.0)
-    cron (~> 1.4.3)
-    elasticsearch (~> 0.3)
-    htpasswd (>= 0.0.0)
-    java (>= 0.0.0)
-    kibana (~> 1.3)
-    line (>= 0.0.0)
-    logstash (~> 0.9)
-    newrelic_meetme_plugin (>= 0.0.0)
-    nginx (>= 0.0.0)
-    openssl (>= 0.0.0)
-    platformstack (>= 0.0.0)
-    python (>= 0.0.0)
-    rsyslog (>= 0.0.0)
-    yum (>= 0.0.0)
-  git (4.0.2)
+  git (4.1.0)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
-    runit (>= 1.0.0)
+    runit (>= 1.0)
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   git-ppa (1.0.0)
     apt (>= 0.0.0)
-  golang (1.3.0)
   heroku (1.0.0)
     ark (>= 0.0.0)
-  htpasswd (0.2.4)
-    python (>= 0.0.0)
   iptables (0.14.0)
   java (1.29.0)
-  kibana (1.3.1)
+  kibana_lwrp (2.0.1)
     apache2 (>= 0.0.0)
     ark (>= 0.0.0)
     git (>= 0.0.0)
+    java (>= 0.0.0)
     libarchive (>= 0.0.0)
     nginx (>= 0.0.0)
+    poise (>= 0.0.0)
+    runit (>= 0.0.0)
   libarchive (0.4.1)
     apt (~> 2.5)
     build-essential (~> 2.0)
-  line (0.5.1)
   logrotate (1.7.0)
-  logstash (0.10.0)
+  logstash (0.11.3)
     ant (>= 0.0.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
+    beaver (>= 0.0.0)
     build-essential (>= 0.0.0)
+    curl (>= 0.0.0)
+    elasticsearch (>= 0.0.0)
     git (>= 0.0.0)
     java (>= 0.0.0)
     logrotate (>= 0.0.0)
@@ -166,20 +132,9 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   monit (0.7.5)
-  motd-tail (2.0.2)
-  newrelic (2.5.1)
-    curl (>= 0.0.0)
-    python (>= 0.0.0)
-  newrelic_meetme_plugin (0.1.1)
-    python (>= 0.0.0)
   nginx (0.5.5)
     apt (>= 0.0.0)
-  ntp (1.7.0)
-  ohai (2.0.1)
-  omnibus_updater (1.0.2)
-  openssh (1.3.4)
-    iptables (>= 0.0.0)
-  openssl (2.0.1)
+  openssl (2.0.0)
     chef-sugar (>= 0.0.0)
   partial_search (1.0.8)
   percona (0.15.5)
@@ -194,70 +149,26 @@ GRAPH
     composer (>= 0.0.0)
   phpunit (1.0.0)
     composer (>= 0.0.0)
-  platformstack (1.5.3)
-    apt (>= 0.0.0)
-    auto-patch (>= 0.0.0)
-    chef-client (>= 0.0.0)
-    chef-sugar (>= 0.0.0)
-    client-rekey (>= 0.0.0)
-    consul (>= 0.0.0)
-    elasticsearch (>= 0.0.0)
-    elkstack (>= 0.0.0)
-    java (>= 0.0.0)
-    motd-tail (>= 0.0.0)
-    newrelic (>= 0.0.0)
-    ntp (>= 0.0.0)
-    ohai (>= 0.0.0)
-    omnibus_updater (>= 0.0.0)
-    openssh (>= 0.0.0)
-    postfix (>= 0.0.0)
-    rackspace_cloudbackup (>= 0.0.0)
-    rackspace_iptables (>= 0.0.0)
-    rsyslog (>= 0.0.0)
-    statsd (>= 0.0.0)
-    sudo (>= 0.0.0)
-    timezone-ii (>= 0.0.0)
-    user (>= 0.0.0)
-    yum (>= 0.0.0)
-  postfix (3.6.2)
+  poise (1.0.10)
   postgresql (0.15.0)
     apt (>= 1.9.0)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  rackspace_cloudbackup (1.0.2)
-    apt (~> 2.0)
-    ohai (>= 0.0.0)
-    yum (~> 3.0)
-    yum-epel (~> 0.5.3)
-  rackspace_iptables (1.7.2)
-    apt (>= 0.0.0)
-    chef-sugar (>= 0.0.0)
-    yum (>= 0.0.0)
   redis (0.5.6)
     apt (>= 0.0.0)
-  rsyslog (1.13.0)
   runit (1.5.12)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   ssh_known_hosts (2.0.0)
     partial_search (>= 0.0.0)
-  statsd (0.0.1)
-    build-essential (>= 0.0.0)
-    git (>= 0.0.0)
-  sudo (2.7.1)
-  timezone-ii (0.2.0)
-  user (0.3.0)
   vagrant-cakebox-builder (0.0.2)
   windows (1.36.1)
     chef_handler (>= 0.0.0)
   xml (1.2.9)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
-  yum (3.5.1)
+  yum (3.5.2)
   yum-epel (0.5.3)
     yum (~> 3.0)
-  yum-repoforge (0.4.0)
-    yum (~> 3.0)
-    yum-epel (>= 0.0.0)
