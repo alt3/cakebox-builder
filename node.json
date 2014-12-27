@@ -44,10 +44,13 @@
 		"java": {
 			"jdk_version": "7"
 		},
-		"elkstack": {
-			"config": {
-				"lumberjack_data_bag": "lumberjack"
-			}
+		"elasticsearch": {
+			"version": "1.4.2"
+		},
+		"kibana": {
+			"install_type": "file",
+			"webserver": "",
+			"user": "kibana"
 		},
 		"cakebox": {
 			"databases": {
@@ -63,6 +66,7 @@
 		"recipe[percona::backup]",
 		"recipe[postgresql::server]",
 		"recipe[php5-ppa]",
+		"recipe[nginx]",
 		"recipe[nginx::server]",
 		"recipe[memcached]",
 		"recipe[redis::server]",
@@ -72,7 +76,10 @@
 		"recipe[phpunit]",
 		"recipe[heroku::toolbelt]",
 		"recipe[java]",
-		"recipe[elkstack::single]",
+		"recipe[runit]",
+		"recipe[elasticsearch]",
+		"recipe[logstash::server]",
+		"recipe[kibana_lwrp::install]",
 		"recipe[cakebox]"
 	]
 }
