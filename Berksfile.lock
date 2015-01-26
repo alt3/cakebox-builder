@@ -29,6 +29,9 @@ DEPENDENCIES
     git: https://github.com/lusis/chef-logstash
     revision: 003fcca1d0737c57bf980d2158f1f59df6fb1cbf
   memcached
+  mongodb
+    git: https://github.com/edelight/chef-mongodb
+    revision: dc5836318a27331f605f264d946931927dd26bb8
   nginx
     git: https://github.com/phlipper/chef-nginx
     revision: 3018f3813ac63155d2dfa4b03d9609ff525b8921
@@ -138,6 +141,10 @@ GRAPH
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  mongodb (0.16.3)
+    apt (>= 1.8.2)
+    python (>= 0.0.0)
+    yum (>= 3.0.0)
   monit (0.7.5)
   nginx (0.6.0)
     apt (>= 0.0.0)

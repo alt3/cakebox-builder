@@ -70,6 +70,8 @@
 		"recipe[percona::server]",
 		"recipe[percona::backup]",
 		"recipe[postgresql::server]",
+		"recipe[mongodb::mongodb_org_repo]",
+		"recipe[mongodb]",
 		"recipe[php5-ppa]",
 		"recipe[nginx]",
 		"recipe[nginx::server]",
