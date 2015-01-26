@@ -32,6 +32,7 @@ load_cookbook 'percona',     git: 'https://github.com/phlipper/chef-percona'
 load_cookbook 'redis',       git: 'https://github.com/phlipper/chef-redis'
 load_cookbook 'postgresql',  git: 'https://github.com/phlipper/chef-postgresql'
 load_cookbook 'php5-ppa',    git: 'https://github.com/alt3/chef-php5-ppa'
+load_cookbook 'hhvm',        git: 'https://github.com/jubianchi/hhvm-cookbook'
 load_cookbook "curl",        git: "https://github.com/phlipper/chef-curl"
 load_cookbook "composer",    git: "https://github.com/Morphodo/chef-composer"
 load_cookbook 'phpunit',     git: 'https://github.com/alt3/chef-phpunit'

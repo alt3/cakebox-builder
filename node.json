@@ -6,7 +6,12 @@
 	"attributes": {
 		"nginx": {
 			"repository": "ppa",
-			"skip_default_site": true
+			"skip_default_site": true,
+			"repository_sources": {
+				"ppa": {
+					"uri": "http://ppa.launchpad.net/nginx/development/ubuntu"
+				}
+			}
 		},
 		"percona": {
 			"apt_keyserver": "pool.sks-keyservers.net",
@@ -68,6 +73,7 @@
 		"recipe[php5-ppa]",
 		"recipe[nginx]",
 		"recipe[nginx::server]",
+		"recipe[hhvm]",
 		"recipe[memcached]",
 		"recipe[redis::server]",
 		"recipe[curl]",
